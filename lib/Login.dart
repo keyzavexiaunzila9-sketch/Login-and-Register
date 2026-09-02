@@ -29,11 +29,11 @@ class _LoginState extends State<Login> {
                 CircleAvatar(
                   radius: 40,
                   backgroundColor:
-                       const Color.fromARGB(255, 213, 234, 255),
+                       const Color.fromARGB(255, 205, 239, 211),
                   child: Icon(
                     Icons.lock,
                     size: 40,
-                    color: const Color.fromARGB(255, 42, 77, 123),
+                    color: const Color.fromARGB(255, 74, 141, 79),
                   ),
                 ),
 
@@ -59,7 +59,7 @@ class _LoginState extends State<Login> {
                 const SizedBox(height: 20),
 
                 Card(
-                  color: const Color.fromARGB(255, 222, 234, 248),
+                  color: const Color.fromARGB(255, 224, 248, 222),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),

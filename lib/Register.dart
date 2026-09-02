@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/Login.dart';
 
 // 1. Enum Gender
 enum Gender { pria, wanita }
@@ -54,11 +55,11 @@ class _RegisterState extends State<Register> {
                 CircleAvatar(
                   radius: 40,
                   backgroundColor:
-                      const Color.fromARGB(255, 205, 229, 255),
+                       const Color.fromARGB(255, 205, 239, 211),
                   child: Icon(
                     Icons.person,
                     size: 40,
-                    color: const Color.fromARGB(255, 51, 74, 122),
+                    color:  const Color.fromARGB(255, 74, 141, 79),
                   ),
                 ),
 
@@ -81,7 +82,7 @@ class _RegisterState extends State<Register> {
 
                 Card(
                   elevation: 3,
-                  color: const Color.fromARGB(255, 222, 234, 248),
+                  color: const Color.fromARGB(255, 224, 248, 222),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
@@ -166,12 +167,7 @@ class _RegisterState extends State<Register> {
                                 groupValue: _jenisKelamin,
                                 title: const Text("Laki-laki"),
                                 activeColor:
-                                    const Color.fromARGB(
-                                  255,
-                                  78,
-                                  88,
-                                  171,
-                                ),
+                                   const Color.fromARGB(255, 74, 141, 79),
 
                                 onChanged: (Gender? value) {
                                   setState(() {
@@ -187,12 +183,7 @@ class _RegisterState extends State<Register> {
                                 groupValue: _jenisKelamin,
                                 title: const Text("Perempuan"),
                                 activeColor:
-                                    const Color.fromARGB(
-                                  255,
-                                  78,
-                                  88,
-                                  171,
-                                ),
+                                    const Color.fromARGB(255, 63, 114, 57),
 
                                 onChanged: (Gender? value) {
                                   setState(() {
@@ -235,12 +226,7 @@ class _RegisterState extends State<Register> {
 
                         Slider(
                           activeColor:
-                              const Color.fromARGB(
-                            255,
-                            78,
-                            88,
-                            171,
-                          ),
+                              const Color.fromARGB(255, 57, 95, 51),
 
                           min: 0,
                           max: 100,
@@ -333,18 +319,13 @@ class _RegisterState extends State<Register> {
 
                         // 19. Checkbox
                         Container(
-                          color: const Color.fromARGB(255, 123, 185, 255),
+                          color: const Color.fromARGB(255, 249, 249, 250),
 
                           child: CheckboxListTile(
                             value: isChecked,
 
                             activeColor:
-                                const Color.fromARGB(
-                              255,
-                              78,
-                              88,
-                              171,
-                            ),
+                                const Color.fromARGB(255, 83, 152, 90),
 
                             title: const Text(
                               "Saya menyetujui syarat dan ketentuan",
@@ -369,12 +350,7 @@ class _RegisterState extends State<Register> {
                             style:
                                 ElevatedButton.styleFrom(
                               backgroundColor:
-                                  const Color.fromARGB(
-                                255,
-                                74,
-                                137,
-                                255,
-                              ),
+                                  const Color.fromARGB(255, 56, 187, 63),
 
                               shape:
                                   RoundedRectangleBorder(
@@ -400,7 +376,12 @@ class _RegisterState extends State<Register> {
                         Center(
                           child: TextButton(
                             onPressed: () {
-                              Navigator.pop(context);
+                              Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Login(),
+                                ),
+                              );
                             },
 
                             child: const Text(
